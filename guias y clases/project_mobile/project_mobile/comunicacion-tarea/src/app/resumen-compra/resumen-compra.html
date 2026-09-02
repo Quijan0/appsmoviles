@@ -1,0 +1,51 @@
+<section class="card shadow-sm">
+
+  <section class="card-body">
+
+    <h2 class="card-title">
+      Resumen de compra
+    </h2>
+
+    <hr>
+
+    <p>
+      <strong>Producto:</strong>
+      {{ producto().nombre }}
+    </p>
+
+    <p>
+      <strong>Precio:</strong>
+      ${{ producto().precio }}
+    </p>
+    <p>
+      <strong>Total:</strong>
+      ${{ calcularTotal() }}
+    </p>
+
+    <section class="d-flex align-items-center gap-3">
+
+      <strong>Cantidad:</strong>
+
+      <button
+        type="button"
+        class="btn btn-danger"
+        (click)="disminuirCantidad()">
+        −
+      </button>
+
+      <span class="fw-bold">
+        {{ cantidad() }}
+      </span>
+
+      <button
+        type="button"
+        class="btn btn-success"
+        (click)="aumentarCantidad()">
+        +
+      </button>
+
+    </section>
+
+  </section>
+
+</section>

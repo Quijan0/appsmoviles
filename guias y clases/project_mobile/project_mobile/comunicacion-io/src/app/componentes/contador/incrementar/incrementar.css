@@ -1,0 +1,30 @@
+.tarjeta {
+  padding: 24px;
+  border-radius: 12px;
+  background-color: #f8fafc;
+}
+
+.tarjeta-incrementar {
+  border: 2px solid #123a78;
+}
+
+button {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #123a78;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #0d2a59;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
