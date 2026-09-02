@@ -1,0 +1,11 @@
+main {
+  max-width: 1000px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+section {
+  margin-bottom: 20px;
+}
